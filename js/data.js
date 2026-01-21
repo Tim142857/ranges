@@ -669,7 +669,7 @@ window.allRanges = [
                 "TT",
                 "T9s"
             ],
-            "CALL_VS_OPEN": [
+            "LIMP_FOLD": [
                 "J8o",
                 "T8o",
                 "98o",
@@ -777,7 +777,7 @@ window.allRanges = [
                 "TT",
                 "T9s"
             ],
-            "CALL_VS_OPEN": [
+            "LIMP_FOLD": [
                 "K6s",
                 "K5s",
                 "K4s",
@@ -918,7 +918,7 @@ window.allRanges = [
                 "A3o",
                 "A2o"
             ],
-            "CALL_VS_OPEN": [
+            "LIMP_FOLD": [
                 "J6s",
                 "J5s",
                 "J4s",
@@ -1063,7 +1063,7 @@ window.allRanges = [
                 "A3o",
                 "A2o"
             ],
-            "CALL_VS_OPEN": [
+            "LIMP_FOLD": [
                 "J6s",
                 "J5s",
                 "J4s",
@@ -3007,7 +3007,7 @@ window.allRanges = [
                 "JTs",
                 "TT"
             ],
-            "LIMP_FOLD": [
+            "CHECK": [
                 "K5s",
                 "K4s",
                 "K3s",
@@ -3186,7 +3186,7 @@ window.allRanges = [
                 "JJ",
                 "TT"
             ],
-            "LIMP_FOLD": [
+            "CHECK": [
                 "K6s",
                 "K5s",
                 "K4s",
@@ -3359,7 +3359,7 @@ window.allRanges = [
                 "QJs",
                 "QTs"
             ],
-            "LIMP_FOLD": [
+            "CHECK": [
                 "K9s",
                 "K8s",
                 "K7s",
@@ -3545,7 +3545,7 @@ window.allRanges = [
                 "QTs",
                 "JTs"
             ],
-            "LIMP_FOLD": [
+            "CHECK": [
                 "K9s",
                 "K8s",
                 "K7s",
@@ -4275,7 +4275,7 @@ window.allRanges = [
                 "K2o",
                 "Q2o"
             ],
-            "LIMP_FOLD": [
+            "CHECK": [
                 "AA",
                 "KK",
                 "J8s",
@@ -4462,7 +4462,7 @@ window.allRanges = [
                 "QQ",
                 "JJ"
             ],
-            "LIMP_FOLD": [
+            "CHECK": [
                 "JTs",
                 "J9s",
                 "J8s",
@@ -4647,7 +4647,7 @@ window.allRanges = [
                 "Q8o",
                 "87s"
             ],
-            "LIMP_FOLD": [
+            "CHECK": [
                 "K6s",
                 "K5s",
                 "K4s",
@@ -4821,7 +4821,7 @@ window.allRanges = [
                 "Q8o",
                 "87s"
             ],
-            "LIMP_FOLD": [
+            "CHECK": [
                 "K6s",
                 "K5s",
                 "K4s",
@@ -5007,7 +5007,7 @@ window.allRanges = [
                 "Q8o",
                 "87s"
             ],
-            "LIMP_FOLD": [
+            "CHECK": [
                 "K6s",
                 "K5s",
                 "K4s",
@@ -5178,7 +5178,7 @@ window.allRanges = [
                 "A3o",
                 "A2o"
             ],
-            "LIMP_FOLD": [
+            "CHECK": [
                 "K5s",
                 "K4s",
                 "K3s",
@@ -5366,7 +5366,7 @@ window.allRanges = [
                 "KK",
                 "QQ"
             ],
-            "LIMP_FOLD": [
+            "CHECK": [
                 "K4s",
                 "K3s",
                 "K2s",
@@ -5551,7 +5551,7 @@ window.allRanges = [
                 "KK",
                 "QQ"
             ],
-            "LIMP_FOLD": [
+            "CHECK": [
                 "K5s",
                 "K4s",
                 "K3s",
@@ -5719,7 +5719,7 @@ window.allRanges = [
                 "KK",
                 "QQ"
             ],
-            "LIMP_FOLD": [
+            "CHECK": [
                 "K9s",
                 "K8s",
                 "K7s",
@@ -5905,7 +5905,7 @@ window.allRanges = [
                 "KK",
                 "QQ"
             ],
-            "LIMP_FOLD": [
+            "CHECK": [
                 "K9s",
                 "K8s",
                 "K7s",
@@ -7192,7 +7192,7 @@ window.allRanges = [
                 "QQ",
                 "JJ"
             ],
-            "CALL_VS_OPEN": [
+            "LIMP_FOLD": [
                 "94s",
                 "93s",
                 "92s",
@@ -7350,7 +7350,7 @@ window.allRanges = [
                 "JJ",
                 "TT"
             ],
-            "CALL_VS_OPEN": [
+            "LIMP_FOLD": [
                 "T5s",
                 "T4s",
                 "T3s",
@@ -7505,7 +7505,7 @@ window.allRanges = [
                 "KK",
                 "QQ"
             ],
-            "CALL_VS_OPEN": [
+            "LIMP_FOLD": [
                 "K5s",
                 "K4s",
                 "K3s",
@@ -7675,7 +7675,7 @@ window.allRanges = [
                 "KK",
                 "QQ"
             ],
-            "CALL_VS_OPEN": [
+            "LIMP_FOLD": [
                 "K7s",
                 "K6s",
                 "K5s",
@@ -7873,7 +7873,7 @@ window.allRanges = [
                 "98o",
                 "87s"
             ],
-            "CALL_VS_OPEN": [
+            "LIMP_FOLD": [
                 "K6s",
                 "K5s",
                 "K4s",
@@ -8078,7 +8078,7 @@ window.allRanges = [
                 "A3o",
                 "A2o"
             ],
-            "CALL_VS_OPEN": [
+            "LIMP_FOLD": [
                 "K5s",
                 "K4s",
                 "K3s",
@@ -8266,7 +8266,7 @@ window.allRanges = [
                 "A3o",
                 "A2o"
             ],
-            "CALL_VS_OPEN": [
+            "LIMP_FOLD": [
                 "K5s",
                 "K4s",
                 "K3s",
@@ -9084,7 +9084,7 @@ window.allRanges = [
                 "Q2o",
                 "J2o"
             ],
-            "LIMP_FOLD": [
+            "CHECK": [
                 "AA",
                 "KK",
                 "QQ",
@@ -9249,7 +9249,7 @@ window.allRanges = [
                 "QJs",
                 "JJ"
             ],
-            "LIMP_FOLD": [
+            "CHECK": [
                 "J7s",
                 "J6s",
                 "J5s",
@@ -9436,7 +9436,7 @@ window.allRanges = [
                 "TT",
                 "T9s"
             ],
-            "LIMP_FOLD": [
+            "CHECK": [
                 "J8s",
                 "J7s",
                 "J6s",
@@ -9612,7 +9612,7 @@ window.allRanges = [
                 "KJo",
                 "ATo"
             ],
-            "LIMP_FOLD": [
+            "CHECK": [
                 "K8s",
                 "K7s",
                 "K6s",
@@ -9780,7 +9780,7 @@ window.allRanges = [
                 "T9s",
                 "98s"
             ],
-            "LIMP_FOLD": [
+            "CHECK": [
                 "K8s",
                 "K7s",
                 "K6s",
@@ -9953,7 +9953,7 @@ window.allRanges = [
                 "QJs",
                 "JJ"
             ],
-            "LIMP_FOLD": [
+            "CHECK": [
                 "A5s",
                 "A4s",
                 "A3s",
