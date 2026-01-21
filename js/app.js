@@ -18,7 +18,8 @@ const actionColors = {
   OPEN_CALL_RAISE_FOLD_ALLIN: "#ddad00",
   OPEN_SHOVE: "#3ec94a",
   THREE_BET_ALLIN: "#77d633",
-  ISO_ALLIN: "#38d161"
+  ISO_ALLIN: "#38d161",
+  CHECK: "#eded00"
 };
 
 /* ===============================
@@ -40,7 +41,8 @@ const actionLabelsFr = {
   OPEN_CALL_RAISE_FOLD_ALLIN: "Open /call vs Raise / Fold vs Allin",
   OPEN_SHOVE: "Open Shove",
   THREE_BET_ALLIN: "3 Bet Allin",
-  ISO_ALLIN: "Iso Allin"
+  ISO_ALLIN: "Iso Allin",
+  CHECK: "Check"
 };
 
 /* ===============================
