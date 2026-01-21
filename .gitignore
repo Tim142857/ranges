@@ -1,6 +1,3 @@
-# Exclure le fichier de données volumineux
-js/data.js
-
 # Fichiers système
 .DS_Store
 Thumbs.db
