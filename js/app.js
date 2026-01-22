@@ -26,8 +26,8 @@ const actionColors = {
    Libellés FR (légende)
 ================================ */
 const actionLabelsFr = {
-  CALL_VS_OPEN: "Check",
-  LIMP_FOLD: "Check",
+  CALL_VS_OPEN: "Call vs Open",
+  LIMP_FOLD: "Limp/Fold",
   OPEN_FOLD: "Open/Fold",
   CALL_VS_OPEN_SHOVE: "Call vs Open Shove",
   OPEN_CALL_RAISE_CALL_ALLIN: "Open/Call un raise/Call Allin",
