@@ -11,7 +11,7 @@ body {
   padding: 14px;
   background: #ffffff;
   color: #000;
-  overflow: hidden; /* objectif: tout tenir sans scroll */
+  overflow-x: hidden;
 }
 
 /* ===============================
@@ -138,7 +138,24 @@ body {
   grid-template-columns: 855px auto;
   gap: 16px;
   align-items: flex-start;
-  height: calc(100vh - 28px);
+  min-height: calc(100vh - 28px);
+}
+
+@media (max-width: 1400px) {
+  .layout {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .sidebar {
+    width: 100%;
+    min-width: 0;
+  }
+  
+  .right {
+    padding-left: 0;
+    min-width: 0;
+  }
 }
 
 /* Colonne droite: contexte + grille */
@@ -148,6 +165,12 @@ body {
   gap: 10px;
   min-width: 520px;
   padding-left: 20px;
+}
+
+@media (max-width: 1400px) {
+  .right {
+    min-width: 0;
+  }
 }
 
 .board {
@@ -209,4 +232,142 @@ body {
 .legend-item[style*="#eded00"],
 .legend-item[style*="#ddad00"] {
   color: #000;
+}
+
+/* ===============================
+   Media Queries - Responsive
+================================ */
+
+/* Tablette */
+@media (max-width: 1200px) {
+  .sidebar {
+    width: 100%;
+    min-width: 0;
+  }
+  
+  .sidebar-col {
+    flex: 0 0 50%;
+  }
+  
+  .grid {
+    grid-template-columns: repeat(13, 32px);
+    grid-template-rows: repeat(13, 32px);
+  }
+  
+  .cell {
+    font-size: 11px;
+  }
+  
+  .board {
+    flex-wrap: wrap;
+  }
+  
+  .legend {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+  
+  .sidebar {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .sidebar-col {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  
+  .selector-row {
+    grid-template-columns: 100px 1fr;
+  }
+  
+  .selector-row__label {
+    font-size: 11px;
+    height: 36px;
+  }
+  
+  .selector-btn {
+    padding: 5px 7px;
+    min-width: 28px;
+    font-size: 12px;
+  }
+  
+  .selector-card__title {
+    font-size: 11px;
+    padding: 6px 8px;
+  }
+  
+  .grid {
+    grid-template-columns: repeat(13, 24px);
+    grid-template-rows: repeat(13, 24px);
+    gap: 1px;
+    padding: 2px;
+  }
+  
+  .cell {
+    font-size: 9px;
+  }
+  
+  .header {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .header span {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+  
+  .board {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .legend {
+    flex-direction: column;
+    gap: 6px;
+  }
+  
+  .legend-item {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+  
+  .right {
+    padding-left: 0;
+  }
+}
+
+/* Très petit mobile */
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: repeat(13, 20px);
+    grid-template-rows: repeat(13, 20px);
+  }
+  
+  .cell {
+    font-size: 8px;
+  }
+  
+  .selector-row {
+    grid-template-columns: 80px 1fr;
+  }
+  
+  .selector-row__label {
+    font-size: 10px;
+  }
+  
+  .selector-btn {
+    padding: 4px 6px;
+    min-width: 24px;
+    font-size: 11px;
+  }
 }
