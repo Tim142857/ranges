@@ -6,6 +6,46 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* ===============================
+   Système d'onglets
+================================ */
+.tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.tab-btn {
+  padding: 12px 24px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: #666;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s;
+}
+
+.tab-btn:hover {
+  color: #333;
+  background: #f5f5f5;
+}
+
+.tab-btn.active {
+  color: #e45c12;
+  border-bottom-color: #e45c12;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
 body {
   margin: 0;
   padding: 14px;
@@ -343,6 +383,366 @@ body {
   
   .right {
     padding-left: 0;
+  }
+}
+
+/* ===============================
+   Interface Quiz
+================================ */
+.quiz-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.quiz-header {
+  margin-bottom: 24px;
+  padding: 20px;
+  background: #f8f8f8;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.quiz-info h2 {
+  margin: 0 0 16px 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.quiz-question-details {
+  margin: 16px 0;
+  padding: 16px;
+  background: white;
+  border-radius: 6px;
+  border-left: 4px solid #e45c12;
+}
+
+.question-item {
+  margin: 8px 0;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.question-item strong {
+  color: #e45c12;
+  margin-right: 8px;
+}
+
+.quiz-stats {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.quiz-stats span {
+  font-size: 14px;
+  color: #666;
+}
+
+.quiz-stats strong {
+  color: #e45c12;
+  font-size: 16px;
+}
+
+.quiz-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  background: #e45c12;
+  color: white;
+  transition: background 0.3s;
+}
+
+.quiz-btn:hover {
+  background: #d14a0f;
+}
+
+.quiz-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.quiz-board {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.quiz-grid {
+  flex-shrink: 0;
+}
+
+.quiz-grid .cell {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.quiz-grid .cell:hover {
+  transform: scale(1.1);
+  z-index: 10;
+  position: relative;
+}
+
+.quiz-grid .cell.selected {
+  outline: 3px solid #e45c12;
+  outline-offset: -3px;
+}
+
+.quiz-grid .cell.correct {
+  background: #3ec94a !important;
+}
+
+.quiz-grid .cell.incorrect {
+  background: #dd0000 !important;
+}
+
+.quiz-grid .cell.missing {
+  background: #ffd700 !important;
+}
+
+.quiz-feedback {
+  flex: 1;
+  min-width: 250px;
+  padding: 16px;
+  background: #f8f8f8;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.quiz-feedback.hidden {
+  display: none;
+}
+
+.quiz-feedback.success {
+  background: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.quiz-feedback.error {
+  background: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.quiz-actions-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* ===============================
+   Table de poker
+================================ */
+.poker-table-container {
+  margin-top: 24px;
+}
+
+.poker-table {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  margin: 0 auto 40px;
+  background: #0d5d2f;
+  border-radius: 50%;
+  border: 8px solid #8b4513;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.poker-seat {
+  position: absolute;
+  width: 120px;
+  padding: 12px;
+  background: rgba(255,255,255,0.95);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.poker-seat.active {
+  background: #fff5f0;
+  border: 3px solid #e45c12;
+  box-shadow: 0 6px 20px rgba(228, 92, 18, 0.4);
+  z-index: 10;
+}
+
+.poker-seat {
+  position: absolute;
+}
+
+.seat-label {
+  font-weight: 900;
+  font-size: 14px;
+  color: #e45c12;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.seat-stack {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.seat-cards {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  min-height: 60px;
+  align-items: center;
+}
+
+.poker-card {
+  width: 55px;
+  height: 75px;
+  background: white;
+  border: 2px solid #333;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 4px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+  position: relative;
+}
+
+.poker-card.red {
+  color: #dd0000;
+}
+
+.poker-card.black {
+  color: #000;
+}
+
+.seat-context {
+  margin-top: 8px;
+  font-size: 11px;
+  color: #666;
+  font-style: italic;
+}
+
+.poker-actions {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.quiz-actions-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #f8f8f8;
+  border-radius: 8px;
+}
+
+.quiz-action-option {
+  padding: 16px 20px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.quiz-action-option:hover {
+  border-color: #e45c12;
+  background: #fff5f0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.quiz-action-option.selected {
+  border-color: #e45c12;
+  background: #fff5f0;
+  box-shadow: 0 0 0 3px rgba(228, 92, 18, 0.2);
+}
+
+.quiz-action-option.correct {
+  border-color: #3ec94a;
+  background: #d4edda;
+  color: #155724;
+}
+
+.quiz-action-option.incorrect {
+  border-color: #dd0000;
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.quiz-action-option:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .tabs {
+    margin-bottom: 12px;
+  }
+  
+  .tab-btn {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+  
+  .quiz-header {
+    padding: 16px;
+  }
+  
+  .quiz-info h2 {
+    font-size: 18px;
+  }
+  
+  .quiz-stats {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .quiz-board {
+    flex-direction: column;
+  }
+  
+  .quiz-actions-options {
+    grid-template-columns: 1fr;
+  }
+  
+  .poker-table {
+    width: 90%;
+    max-width: 500px;
+    height: 300px;
+  }
+  
+  .poker-seat {
+    width: 100px;
+    padding: 10px;
+  }
+  
+  .poker-card {
+    width: 45px;
+    height: 65px;
+  }
+  
+  .seat-label {
+    font-size: 12px;
+  }
+  
+  .seat-stack {
+    font-size: 11px;
   }
 }
 

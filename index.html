@@ -8,14 +8,103 @@
 </head>
 <body>
 
-  <div class="layout">
-    <div class="sidebar" id="selector"></div>
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="visualization">Visualisation</button>
+    <button class="tab-btn" data-tab="quiz-ranges">Quiz de ranges</button>
+    <button class="tab-btn" data-tab="quiz-actions">Quiz d'actions</button>
+  </div>
 
-    <div class="right">
-      <div class="header" id="context"></div>
-      <div class="board">
-        <div class="grid" id="grid"></div>
-        <div class="legend" id="legend"></div>
+  <!-- Onglet Visualisation -->
+  <div class="tab-content active" id="tab-visualization">
+    <div class="layout">
+      <div class="sidebar" id="selector"></div>
+
+      <div class="right">
+        <div class="header" id="context"></div>
+        <div class="board">
+          <div class="grid" id="grid"></div>
+          <div class="legend" id="legend"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Onglet Quiz de ranges -->
+  <div class="tab-content" id="tab-quiz-ranges">
+    <div class="quiz-container">
+      <div class="quiz-header">
+        <div class="quiz-info">
+          <h2>Quelle range de mains pour :</h2>
+          <div class="quiz-question-details" id="quiz-question">
+            <div class="question-item"><strong>ACTION:</strong> <span id="quiz-action"></span></div>
+            <div class="question-item"><strong>CONTEXTE:</strong> <span id="quiz-context"></span></div>
+            <div class="question-item"><strong>POSITION:</strong> <span id="quiz-position"></span></div>
+            <div class="question-item"><strong>STACK:</strong> <span id="quiz-stack"></span></div>
+          </div>
+          <div class="quiz-stats">
+            <span>Score: <strong id="quiz-score">0</strong></span>
+            <span>Bonne réponse: <strong id="quiz-correct">0</strong></span>
+            <span>Faux: <strong id="quiz-wrong">0</strong></span>
+          </div>
+        </div>
+        <button class="quiz-btn" id="quiz-next">Question suivante</button>
+        <button class="quiz-btn" id="quiz-check">Vérifier</button>
+        <button class="quiz-btn" id="quiz-reset">Réinitialiser</button>
+      </div>
+      <div class="quiz-board">
+        <div class="grid quiz-grid" id="quiz-grid"></div>
+        <div class="quiz-feedback" id="quiz-feedback"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Onglet Quiz d'actions -->
+  <div class="tab-content" id="tab-quiz-actions">
+    <div class="quiz-container">
+      <div class="quiz-header">
+        <div class="quiz-info">
+          <h2>Quelle action pour cette main ?</h2>
+          <div class="quiz-stats">
+            <span>Score: <strong id="quiz-actions-score">0</strong></span>
+            <span>Bonne réponse: <strong id="quiz-actions-correct">0</strong></span>
+            <span>Faux: <strong id="quiz-actions-wrong">0</strong></span>
+          </div>
+        </div>
+        <div class="quiz-actions-buttons">
+          <button class="quiz-btn" id="quiz-actions-next">Question suivante</button>
+          <button class="quiz-btn" id="quiz-actions-reset">Réinitialiser</button>
+        </div>
+      </div>
+      
+      <div class="poker-table-container">
+        <div class="poker-table">
+          <!-- Joueur 1 (BTN) -->
+          <div class="poker-seat" id="seat-btn">
+            <div class="seat-label">BTN</div>
+            <div class="seat-stack" id="stack-btn"></div>
+            <div class="seat-cards"></div>
+          </div>
+          
+          <!-- Joueur 2 (SB) -->
+          <div class="poker-seat" id="seat-sb">
+            <div class="seat-label">SB</div>
+            <div class="seat-stack" id="stack-sb"></div>
+            <div class="seat-cards"></div>
+          </div>
+          
+          <!-- Joueur 3 (BB) - Le joueur actif -->
+          <div class="poker-seat active" id="seat-bb">
+            <div class="seat-label">BB</div>
+            <div class="seat-stack" id="stack-bb"></div>
+            <div class="seat-cards" id="player-cards"></div>
+            <div class="seat-context" id="seat-context"></div>
+          </div>
+        </div>
+        
+        <div class="poker-actions">
+          <div class="quiz-actions-options" id="quiz-actions-options"></div>
+          <div class="quiz-feedback" id="quiz-actions-feedback"></div>
+        </div>
       </div>
     </div>
   </div>

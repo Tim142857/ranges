@@ -1,0 +1,47 @@
+# Listes uniques extraites de data.js
+
+## ACTION GROUPS (5 groupes uniques)
+
+1. Range d'ouverture 3W
+2. Range de défense 3W vs Open
+3. Range de défense 3W vs Limp
+4. 3W CALL OPEN SHOVE
+5. Head's Up
+
+## POSITIONS (17 positions uniques)
+
+1. BTN
+2. SB
+3. BB vs BTN
+4. SB vs BTN
+5. BB vs SB
+6. BB vs Open Bouton + SB
+7. BB VS BTN LIMP
+8. SB vs BTN Limp
+9. BB vs SB Limp
+10. BB VS 2 LIMP
+11. BB vs 2 Shove
+12. BOUTON (SB)
+13. BB vs Open
+14. BB vs Limp
+15. Call Open Shove (COS)
+
+## ACTIONS (17 actions uniques)
+
+1. OPEN_SHOVE
+2. OPEN_CALL_RAISE_CALL_ALLIN
+3. OPEN_FOLD
+4. LIMP_SHOVE
+5. LIMP_FOLD
+6. THREE_BET_ALLIN
+7. CALL_VS_OPEN
+8. THREE_BET_SIZE_VALUE
+9. ISO_ALLIN
+10. ISO_SIZE_VALUE_CALL_ALLIN
+11. CHECK
+12. ISO_ONE_THIRD_STACK
+13. ISO_SIZE_FOLD_VS_RAISE
+14. CALL_VS_OPEN_SHOVE
+15. LIMP_CALL_VS_RAISE_ALLIN
+16. OPEN_CALL_RAISE_FOLD_ALLIN
+17. THREE_BET_ONE_THIRD_STACK
